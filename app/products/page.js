@@ -3,8 +3,8 @@ import ProductCard from "@/components/ProductCard";
 import { products } from "@/data/products";
 
 export const metadata = {
-  title: "Products | Proto-House",
-  description: "Browse prototyping products built for robotics teams and hobbyists.",
+  title: "Products | ProtoHouse",
+  description: "Browse prototyping products built for robotics teams and enthusiasts.",
 };
 
 export default function ProductsPage() {

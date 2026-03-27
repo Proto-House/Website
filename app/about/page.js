@@ -1,21 +1,21 @@
 import Section from "@/components/Section";
 
 export const metadata = {
-  title: "About | Proto-House",
-  description: "Learn the story and mission behind Proto-House.",
+  title: "About | ProtoHouse",
+  description: "Learn the story and mission behind ProtoHouse.",
 };
 
 export default function AboutPage() {
   return (
     <Section>
       <div className="grid gap-10 md:grid-cols-12">
-        <h1 className="text-4xl font-bold tracking-tight md:col-span-5 md:text-5xl">About Proto-House</h1>
+        <h1 className="text-4xl font-bold tracking-tight md:col-span-5 md:text-5xl">About ProtoHouse</h1>
         <div className="md:col-span-7 space-y-6 leading-8 text-zinc-700">
           <p>
-            Proto-House was founded by Rishi Mishra and Yash Patel who wanted a faster, more affordable way to build and test ideas.
+            ProtoHouse was founded by Rishi Mishra and Yash Patel who wanted a faster, more affordable way to build and test ideas.
           </p>
           <p>
-            We built this company for robotics teams and hobbyists who need dependable parts without long lead times or high costs.
+            We built this company for robotics teams and enthusiasts who need dependable parts without long lead times or high costs.
           </p>
           <p>
             Our goal is to support innovation through rapid iteration and expand access to hands-on engineering education.
