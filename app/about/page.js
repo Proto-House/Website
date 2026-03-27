@@ -12,15 +12,25 @@ export default function AboutPage() {
         <h1 className="text-4xl font-bold tracking-tight md:col-span-5 md:text-5xl">About Proto-House</h1>
         <div className="md:col-span-7 space-y-6 leading-8 text-zinc-700">
           <p>
-            Proto-House was founded by students who wanted a faster, more affordable way to build and test ideas.
+            Proto-House was founded by Rishi Mishra and Yash Patel who wanted a faster, more affordable way to build and test ideas.
           </p>
           <p>
             We built this company for robotics teams and hobbyists who need dependable parts without long lead times or high costs.
           </p>
           <p>
-            Our mission is simple: support innovation through rapid iteration and expand access to hands-on engineering education.
+            Our goal is to support innovation through rapid iteration and expand access to hands-on engineering education.
           </p>
         </div>
+      </div>
+      <div className="mt-12 grid gap-6 md:grid-cols-2">
+        <article className="rounded-xl border border-zinc-200 p-6">
+          <h2 className="text-xl font-semibold text-zinc-900">Rishi Mishra (Co-Founder)</h2>
+          <p className="mt-3 text-zinc-700">{""}</p>
+        </article>
+        <article className="rounded-xl border border-zinc-200 p-6">
+          <h2 className="text-xl font-semibold text-zinc-900">Yash Patel (Co-Founder)</h2>
+          <p className="mt-3 text-zinc-700">{""}</p>
+        </article>
       </div>
     </Section>
   );
