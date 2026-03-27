@@ -20,7 +20,7 @@ export default function EducationPage() {
         </div>
       </Section>
       <Section>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-4">
           <article className="rounded-xl border border-zinc-200 p-6">
             <h2 className="text-xl font-semibold">Iteration drives learning</h2>
             <p className="mt-3 text-zinc-600">
@@ -37,6 +37,12 @@ export default function EducationPage() {
             <h2 className="text-xl font-semibold">Real-world applications</h2>
             <p className="mt-3 text-zinc-600">
               From FRC mechanisms to classroom projects, students build practical skills they can use in industry and research.
+            </p>
+          </article>
+          <article className="rounded-xl border border-zinc-200 p-6">
+            <h2 className="text-xl font-semibold">What Makes Us Special</h2>
+            <p className="mt-3 text-zinc-600">
+              We aim to make engineering learning hands on and interactive allowing students to practice all forms of engineering from mechnical, to electrical, to computer engineering.
             </p>
           </article>
         </div>
