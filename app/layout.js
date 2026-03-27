@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Proto-House",
+  title: "ProtoHouse",
   description:
     "Proto-House provides affordable prototyping materials for robotics teams, schools, and hobbyists.",
 };

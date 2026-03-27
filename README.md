@@ -1,6 +1,6 @@
-# Proto-House Website
+# ProtoHouse Website
 
-A clean, minimal startup website for Proto-House built with Next.js (App Router) and Tailwind CSS.
+A clean, minimal startup website for ProtoHouse built with Next.js (App Router) and Tailwind CSS.
 
 ## Run locally
 
