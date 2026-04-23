@@ -76,7 +76,7 @@ export default function Home() {
               We support FRC teams and classrooms with practical materials that let students move from CAD to testing quickly.
             </p>
             <p>
-              Our long-term goal is to expand education partnerships and contracts that make engineering tools accessible to more schools.
+              Our long-term goal is to help make cutting edge robotics more accesible to students.
             </p>
             <div className="grid gap-3 sm:grid-cols-3">
               <div className="rounded-lg border border-white/15 bg-white/5 p-4">⚙️ Real build experience</div>
@@ -88,11 +88,23 @@ export default function Home() {
       </Section>
 
       <Section id="why" className="border-t border-zinc-200">
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Why ProtoHouse?</h2>
+        <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Proto-House is Tailored Towards You.</h2>
+        <p className="mt-3 text-zinc-700">
+          We aim to make products that target YOU no matter which category you fall into.
+        </p>
         <ul className="mt-7 grid gap-4 text-zinc-700 md:grid-cols-3">
-          <li className="rounded-lg border border-zinc-200 p-5">Rapid prototyping and iteration cycles for robotics teams</li>
-          <li className="rounded-lg border border-zinc-200 p-5">Designs for educational hands on learning of all types of engineering</li>
-          <li className="rounded-lg border border-zinc-200 p-5">Affordable compared to traditional machining for enthusiasts</li>
+          <li className="rounded-lg border border-zinc-200 p-5">
+            <span className="block text-base font-semibold text-zinc-900">Robotics Teams</span>
+            <span className="mt-2 block">Rapid prototyping and iteration cycles for robotics teams</span>
+          </li>
+          <li className="rounded-lg border border-zinc-200 p-5">
+            <span className="block text-base font-semibold text-zinc-900">Students and Learners</span>
+            <span className="mt-2 block">Designs for educational hands on learning of all types of engineering</span>
+          </li>
+          <li className="rounded-lg border border-zinc-200 p-5">
+            <span className="block text-base font-semibold text-zinc-900">Hobbyist</span>
+            <span className="mt-2 block">Affordable compared to traditional machining for hobbyist</span>
+          </li>
         </ul>
       </Section>
     </>
