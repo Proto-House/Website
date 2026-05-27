@@ -78,43 +78,6 @@ export default function AboutPage() {
             the engineering. The other owns the business.
           </p>
         </div>
-<<<<<<< Updated upstream
-      </div>
-      <div className="mt-12 rounded-xl bg-zinc-900 px-6 py-10 text-white md:px-10">
-        <div className="grid gap-10 md:grid-cols-12">
-          <div className="md:col-span-5">
-            <p className="text-sm font-semibold uppercase tracking-wider text-blue-300">Education First</p>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">
-              Building future engineers through hands-on iteration
-            </h2>
-          </div>
-          <div className="md:col-span-7 space-y-5 text-zinc-300">
-            <p>
-              We support FRC teams and classrooms with practical materials that let students move from CAD to testing quickly.
-            </p>
-            <p>
-              Our long-term goal is to help make cutting edge robotics more accesible to students.
-            </p>
-            <div className="grid gap-3 sm:grid-cols-3">
-              <div className="rounded-lg border border-white/15 bg-white/5 p-4">⚙️ Real build experience</div>
-              <div className="rounded-lg border border-white/15 bg-white/5 p-4">🏫 Classroom ready</div>
-              <div className="rounded-lg border border-white/15 bg-white/5 p-4">🚀 Fast iteration cycles</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="mt-12 grid gap-6 md:grid-cols-2">
-        <article className="rounded-xl border border-zinc-200 p-6">
-          <h2 className="text-xl font-semibold text-zinc-900">Rishi Mishra (Co-Founder)</h2>
-          <p className="mt-3 text-zinc-700">{""}</p>
-        </article>
-        <article className="rounded-xl border border-zinc-200 p-6">
-          <h2 className="text-xl font-semibold text-zinc-900">Yash Patel (Co-Founder)</h2>
-          <p className="mt-3 text-zinc-700">{""}</p>
-        </article>
-      </div>
-    </Section>
-=======
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {/* Founder 1 (Technical Lead) */}
           <article className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-800">
@@ -201,6 +164,5 @@ export default function AboutPage() {
         </div>
       </Section>
     </>
->>>>>>> Stashed changes
   );
 }

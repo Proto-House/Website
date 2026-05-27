@@ -119,27 +119,6 @@ export default function Home() {
         </div>
       </Section>
 
-<<<<<<< Updated upstream
-      <Section id="why" className="border-t border-zinc-200">
-        <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Proto-House is Tailored Towards You.</h2>
-        <p className="mt-3 text-zinc-700">
-          We aim to make products that target YOU no matter which category you fall into.
-        </p>
-        <ul className="mt-7 grid gap-4 text-zinc-700 md:grid-cols-3">
-          <li className="rounded-lg border border-zinc-200 p-5">
-            <span className="block text-base font-semibold text-zinc-900">Robotics Teams</span>
-            <span className="mt-2 block">Rapid prototyping and iteration cycles for robotics teams</span>
-          </li>
-          <li className="rounded-lg border border-zinc-200 p-5">
-            <span className="block text-base font-semibold text-zinc-900">Students and Learners</span>
-            <span className="mt-2 block">Designs for educational hands on learning of all types of engineering</span>
-          </li>
-          <li className="rounded-lg border border-zinc-200 p-5">
-            <span className="block text-base font-semibold text-zinc-900">Hobbyist</span>
-            <span className="mt-2 block">Affordable compared to traditional machining for hobbyist</span>
-          </li>
-        </ul>
-=======
       {/* Featured project */}
       <Section className="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900">
         <div className="grid items-center gap-8 rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-950 md:grid-cols-2 md:p-10">
@@ -235,7 +214,6 @@ export default function Home() {
           </div>
           <Button href="/contact">Request a free assessment</Button>
         </div>
->>>>>>> Stashed changes
       </Section>
     </>
   );
