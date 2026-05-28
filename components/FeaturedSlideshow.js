@@ -61,7 +61,7 @@ export default function FeaturedSlideshow({ items, intervalMs = 4000 }) {
               <h2 className="text-2xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-3xl">
                 {item.title}
               </h2>
-              <p className="mt-4 leading-relaxed text-zinc-600 dark:text-zinc-400">
+              <p className="mt-4 leading-relaxed text-zinc-600 dark:text-zinc-300">
                 {item.summary}
               </p>
             </div>

@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 export const metadata = {
   title: "About",
   description:
-    "ProtoHouse is a small team of roboticists building custom automation for manufacturers, with hands-on engineering experience from FRC, swerve drives, drones, and custom PCBs.",
+    "ProtoHouse is a small team of engineers building custom automation for manufacturers, with hands-on engineering experience from FRC, swerve drives, drones, and custom PCBs.",
 };
 
 const beliefs = [
@@ -32,7 +32,7 @@ export default function AboutPage() {
     <>
       <Hero
         eyebrow="About ProtoHouse"
-        title="A small team of roboticists building automation for manufacturers."
+        title="A small team of engineers building automation for manufacturers."
         subtitle="We design, install, and support custom robotic solutions. And we understand them deeply, because we've built robots ourselves, right from the mechanics up."
       />
 
@@ -44,7 +44,7 @@ export default function AboutPage() {
               Our story
             </h2>
           </div>
-          <div className="space-y-5 leading-relaxed text-zinc-600 dark:text-zinc-400 md:col-span-7">
+          <div className="space-y-5 leading-relaxed text-zinc-600 dark:text-zinc-300 md:col-span-7">
             <p>
               ProtoHouse started where a lot of good engineers start. In FRC and
               small-scale robotics, mentoring and building next to other people
@@ -73,7 +73,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-4xl">
             The team
           </h2>
-          <p className="mt-3 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-3 text-zinc-600 dark:text-zinc-300">
             Two founders, two deliberately different specializations. One owns
             the engineering. The other owns the business.
           </p>
@@ -90,7 +90,7 @@ export default function AboutPage() {
             <p className="mt-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">
               Engineering, robotics design, technical execution
             </p>
-            <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+            <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
               [Bio placeholder. Technical background: mechanical and electrical
               design, PCB layout and embedded firmware, motor control, and the
               hands-on builds (swerve drive, drones, custom boards) behind our
@@ -109,7 +109,7 @@ export default function AboutPage() {
             <p className="mt-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">
               Business development, customer relationships, operations
             </p>
-            <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+            <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
               [Bio placeholder. Background in business development, sales, and
               customer-facing work: understanding what manufacturers need,
               scoping engagements, and running operations so projects actually
@@ -135,7 +135,7 @@ export default function AboutPage() {
               <h3 className="text-lg font-semibold text-zinc-950 dark:text-white">
                 {belief.title}
               </h3>
-              <p className="mt-2 leading-relaxed text-zinc-600 dark:text-zinc-400">
+              <p className="mt-2 leading-relaxed text-zinc-600 dark:text-zinc-300">
                 {belief.body}
               </p>
             </div>
@@ -150,7 +150,7 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-3xl">
               Let's build something that works.
             </h2>
-            <p className="mt-3 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-3 text-zinc-600 dark:text-zinc-300">
               See how we approach automation. Or reach out and tell us about your
               operation.
             </p>

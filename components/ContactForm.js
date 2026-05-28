@@ -137,7 +137,7 @@ export default function ContactForm() {
           Request a free assessment
         </button>
         {submitted && (
-          <p className="text-sm text-zinc-600 dark:text-zinc-400" role="status">
+          <p className="text-sm text-zinc-600 dark:text-zinc-300" role="status">
             Thanks! Your email draft should be open now. If it didn&apos;t open,
             just write to us at{" "}
             <a

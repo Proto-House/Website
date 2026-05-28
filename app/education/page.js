@@ -42,7 +42,7 @@ export default function EducationPage() {
               The problem with robotics education today
             </h2>
           </div>
-          <div className="space-y-5 leading-relaxed text-zinc-600 dark:text-zinc-400 md:col-span-7">
+          <div className="space-y-5 leading-relaxed text-zinc-600 dark:text-zinc-300 md:col-span-7">
             <p>
               A lot of engineering classrooms have run on the same materials for
               10 to 15 years. The kits haven't changed. Neither has the
@@ -68,7 +68,7 @@ export default function EducationPage() {
           <h2 className="text-3xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-4xl">
             Our approach
           </h2>
-          <p className="mt-3 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-3 text-zinc-600 dark:text-zinc-300">
             A modern robotics curriculum built on real engineering. These are the
             same skills we used to build everything in our portfolio.
           </p>
@@ -94,7 +94,7 @@ export default function EducationPage() {
           <h2 className="text-3xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-4xl">
             What we offer
           </h2>
-          <p className="mt-3 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-3 text-zinc-600 dark:text-zinc-300">
             Robotics kits and curriculum, plus the ongoing partnership to keep
             both current with where the industry actually is.
           </p>
@@ -113,7 +113,7 @@ export default function EducationPage() {
                   {offering.status}
                 </span>
               </div>
-              <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+              <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
                 {offering.description}
               </p>
             </article>
@@ -163,7 +163,7 @@ export default function EducationPage() {
               <h3 className="text-lg font-semibold text-zinc-950 dark:text-white">
                 {audience.title}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+              <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
                 {audience.description}
               </p>
             </article>
@@ -177,7 +177,7 @@ export default function EducationPage() {
           <h2 className="text-2xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-3xl">
             Get notified when our education products launch
           </h2>
-          <p className="mt-3 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-3 text-zinc-600 dark:text-zinc-300">
             Our kits and curriculum are still in the works. Reach out and we'll
             let you know the moment they're ready. And if you just want to talk
             curriculum in the meantime, we're up for that too.

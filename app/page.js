@@ -72,7 +72,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-4xl">
             What we do
           </h2>
-          <p className="mt-3 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-3 text-zinc-600 dark:text-zinc-300">
             Automation from end to end. We take it from the first sketch all the
             way to the system that's still running years later.
           </p>
@@ -102,7 +102,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-4xl">
             Our approach
           </h2>
-          <p className="mt-3 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-3 text-zinc-600 dark:text-zinc-300">
             Here's what sets us apart from a traditional integration firm.
           </p>
         </div>
@@ -115,7 +115,7 @@ export default function Home() {
               <h3 className="text-lg font-semibold text-zinc-950 dark:text-white">
                 {item.title}
               </h3>
-              <p className="mt-2 leading-relaxed text-zinc-600 dark:text-zinc-400">
+              <p className="mt-2 leading-relaxed text-zinc-600 dark:text-zinc-300">
                 {item.body}
               </p>
             </div>
@@ -140,8 +140,8 @@ export default function Home() {
             <h2 className="text-2xl font-bold tracking-tight text-zinc-950 dark:text-white">
               Built by people who build robots
             </h2>
-            <p className="mt-4 leading-relaxed text-zinc-600 dark:text-zinc-400">
-              Two roboticists started ProtoHouse, and their strengths line up
+            <p className="mt-4 leading-relaxed text-zinc-600 dark:text-zinc-300">
+              Two engineers started ProtoHouse, and their strengths line up
               nicely. One leads engineering and robotics design. The other runs
               business development and customer relationships. We get how
               automation works because we've designed and built the hardware
@@ -163,7 +163,7 @@ export default function Home() {
             <h2 className="mt-3 text-2xl font-bold tracking-tight text-zinc-950 dark:text-white">
               Still invested in robotics education
             </h2>
-            <p className="mt-4 leading-relaxed text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 leading-relaxed text-zinc-600 dark:text-zinc-300">
               We learned engineering through FRC and a lot of hands-on building.
               We haven't forgotten that. Alongside the automation work, we're
               putting together modern robotics kits and curriculum for the next

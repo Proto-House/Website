@@ -41,7 +41,7 @@ export default function Hero({
             {title}
           </h1>
           {subtitle && (
-            <p className="mt-6 text-lg leading-relaxed text-zinc-600 dark:text-zinc-400 md:text-xl">
+            <p className="mt-6 text-lg leading-relaxed text-zinc-600 dark:text-zinc-300 md:text-xl">
               {subtitle}
             </p>
           )}
@@ -57,7 +57,7 @@ export default function Hero({
               width={2048}
               height={1152}
               priority
-              className="w-full max-w-[30rem] -rotate-6 md:max-w-[35rem] md:-mr-16 md:translate-x-[36px]"
+              className="w-full max-w-[30rem] -rotate-6 scale-145 md:max-w-[35rem] md:-mr-16 md:translate-x-[36px]"
             />
           </div>
         )}

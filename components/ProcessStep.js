@@ -10,7 +10,7 @@ export default function ProcessStep({ step, title, children }) {
       <h3 className="mt-4 text-base font-semibold text-zinc-950 dark:text-white">
         {title}
       </h3>
-      <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+      <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
         {children}
       </p>
     </div>

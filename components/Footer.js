@@ -56,11 +56,11 @@ export default function Footer() {
           <span className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-white">
             ProtoHouse
           </span>
-          <p className="max-w-xs text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+          <p className="max-w-xs text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
             Custom robotic automation for small and mid-size manufacturers, built
             by engineers who came up through the robotics community.
           </p>
-          <span className="text-sm text-zinc-500 dark:text-zinc-500">
+          <span className="text-sm text-zinc-500 dark:text-zinc-400">
             © {year} ProtoHouse. All rights reserved.
           </span>
           <div className="mt-1 flex items-center gap-3">
@@ -94,7 +94,7 @@ export default function Footer() {
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+                      className="text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-white"
                     >
                       {link.label}
                     </Link>
@@ -111,7 +111,7 @@ export default function Footer() {
             &ldquo;Automation applied to an efficient operation will magnify the
             efficiency.&rdquo;
           </p>
-          <span className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
+          <span className="mt-2 text-sm text-zinc-500 dark:text-zinc-300">
             — Bill Gates
           </span>
         </div>

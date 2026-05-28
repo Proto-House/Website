@@ -37,8 +37,8 @@ export const projects = [
     ],
   },
   {
-    id: "ai-vision-robot-arm",
-    title: "AI Vision-Driven Robot Arm",
+    id: "Vision Driven Autonomous Arm",
+    title: "Vision Driven Autonomous Arm",
     summary:
       "An industrial-style robot arm driven by an on-device AI vision model. The arm sees the part in frame, plans the motion, and executes the pick — closing the loop between perception and manipulation in one custom build.",
     skills: [

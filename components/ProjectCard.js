@@ -62,7 +62,7 @@ export default function ProjectCard({ project, compact = false }) {
           )}
         </div>
 
-        <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+        <p className="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
           {summary}
         </p>
 
@@ -103,7 +103,7 @@ export default function ProjectCard({ project, compact = false }) {
                     {overviewParas.map((para, i) => (
                       <p
                         key={i}
-                        className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400"
+                        className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-300"
                       >
                         {para}
                       </p>
@@ -127,7 +127,7 @@ export default function ProjectCard({ project, compact = false }) {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white"
+                  className="text-zinc-500 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-white"
                 >
                   {link.label} ↗
                 </a>

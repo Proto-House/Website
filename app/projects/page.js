@@ -15,7 +15,7 @@ export default function ProjectsPage() {
       <Hero
         eyebrow="Portfolio"
         title="What we've built."
-        subtitle="These are the projects that taught us how robots really work. Mechanical, electrical, software, all on real hardware. It's the same depth we bring to factory automation."
+        subtitle="These are our past projects in mechanical, electrical, and software, all built on real hardware. This showcases our expertise, and the same depth we bring to factory automation."
       />
 
       <Section className="border-t border-zinc-200 dark:border-zinc-800">
@@ -33,7 +33,7 @@ export default function ProjectsPage() {
             <h2 className="text-2xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-3xl">
               Side projects
             </h2>
-            <p className="mt-3 text-zinc-600 dark:text-zinc-400">
+            <p className="mt-3 text-zinc-600 dark:text-zinc-300">
               Other cool things we&apos;ve built along the way.
             </p>
           </div>

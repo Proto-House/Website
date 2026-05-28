@@ -24,7 +24,7 @@ export default function ContactPage() {
               <h2 className="text-xl font-semibold text-zinc-950 dark:text-white">
                 What to expect
               </h2>
-              <p className="mt-3 leading-relaxed text-zinc-600 dark:text-zinc-400">
+              <p className="mt-3 leading-relaxed text-zinc-600 dark:text-zinc-300">
                 First, we'll set up a 30-minute call to understand your operation
                 and what you're hoping to automate. If it looks like a fit, we'll
                 follow up with a free on-site assessment. That's a closer look at
@@ -36,7 +36,7 @@ export default function ContactPage() {
               <h2 className="text-xl font-semibold text-zinc-950 dark:text-white">
                 Prefer email?
               </h2>
-              <p className="mt-3 leading-relaxed text-zinc-600 dark:text-zinc-400">
+              <p className="mt-3 leading-relaxed text-zinc-600 dark:text-zinc-300">
                 You can also reach us directly at{" "}
                 <a
                   href="mailto:info@protohouse.org"

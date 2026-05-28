@@ -30,6 +30,35 @@ const services = [
   },
 ];
 
+// Pain (traditional integration) lined up against ProtoHouse's answer.
+// Rendered as a 2-col table below "The problem" so the contrast reads visually.
+const contrasts = [
+  {
+    pain: "Expensive engagements and slow delivery, scoped for enterprise budgets.",
+    answer: "Priced realistically for small and mid-size manufacturers, with a faster path to a working line.",
+  },
+  {
+    pain: "One-and-done installs — the integrator vanishes once the system is on the floor.",
+    answer: "Long-term support built in. Same team, on call when the line needs them.",
+  },
+  {
+    pain: "A system nobody on your team fully understands when it drifts out of spec.",
+    answer: "Engineered transparently by the people who designed and built every part of it.",
+  },
+];
+
+const XIcon = (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 h-5 w-5 shrink-0 text-zinc-400 dark:text-zinc-500" aria-hidden="true">
+    <path d="M18 6 6 18M6 6l12 12" />
+  </svg>
+);
+
+const CheckIcon = (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 h-5 w-5 shrink-0 text-blue-600 dark:text-blue-400" aria-hidden="true">
+    <path d="m5 12 5 5L20 7" />
+  </svg>
+);
+
 const steps = [
   {
     step: "1",
@@ -68,10 +97,10 @@ export default function AutomationPage() {
         <div className="grid gap-8 md:grid-cols-12">
           <div className="md:col-span-5">
             <h2 className="text-3xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-4xl">
-              The problem
+              The problem with the industry
             </h2>
           </div>
-          <div className="space-y-5 leading-relaxed text-zinc-600 dark:text-zinc-400 md:col-span-7">
+          <div className="space-y-5 leading-relaxed text-zinc-600 dark:text-zinc-300 md:col-span-7">
             <p>
               Labor costs keep climbing. Skilled operators are hard to hire and
               even harder to keep, and manual processes put a ceiling on what you
@@ -90,6 +119,51 @@ export default function AutomationPage() {
             </p>
           </div>
         </div>
+
+        {/* Visual: traditional integrator vs ProtoHouse, row-by-row pain → answer */}
+        <div className="mt-12 overflow-hidden rounded-2xl border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
+          <div className="grid grid-cols-2">
+            <div className="border-b border-r border-zinc-200 bg-zinc-50 px-5 py-4 dark:border-zinc-800 dark:bg-zinc-900/50 md:px-7">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+                The usual path
+              </p>
+              <p className="mt-1 text-sm font-semibold text-zinc-900 dark:text-zinc-100 md:text-base">
+                Traditional integrators
+              </p>
+            </div>
+            <div className="border-b border-zinc-200 bg-blue-50/50 px-5 py-4 dark:border-zinc-800 dark:bg-blue-950/20 md:px-7">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-blue-700 dark:text-blue-300">
+                Our approach
+              </p>
+              <p className="mt-1 text-sm font-semibold text-zinc-900 dark:text-zinc-100 md:text-base">
+                ProtoHouse
+              </p>
+            </div>
+          </div>
+          {contrasts.map((row, i) => (
+            <div
+              key={i}
+              className={`grid grid-cols-2 ${
+                i < contrasts.length - 1
+                  ? "border-b border-zinc-200 dark:border-zinc-800"
+                  : ""
+              }`}
+            >
+              <div className="flex items-start gap-3 border-r border-zinc-200 px-5 py-5 dark:border-zinc-800 md:px-7 md:py-6">
+                {XIcon}
+                <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
+                  {row.pain}
+                </p>
+              </div>
+              <div className="flex items-start gap-3 px-5 py-5 md:px-7 md:py-6">
+                {CheckIcon}
+                <p className="text-sm leading-relaxed text-zinc-700 dark:text-zinc-200">
+                  {row.answer}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </Section>
 
       {/* Our services */}
@@ -98,7 +172,7 @@ export default function AutomationPage() {
           <h2 className="text-3xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-4xl">
             Our services
           </h2>
-          <p className="mt-3 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-3 text-zinc-600 dark:text-zinc-300">
             Everything it takes to move a manual process to a dependable
             automated one, and keep it that way.
           </p>
@@ -118,7 +192,7 @@ export default function AutomationPage() {
           <h2 className="text-3xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-4xl">
             Our process
           </h2>
-          <p className="mt-3 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-3 text-zinc-600 dark:text-zinc-300">
             A clear path from the first conversation to a system that keeps
             delivering.
           </p>
@@ -140,7 +214,7 @@ export default function AutomationPage() {
               What we work with
             </h2>
           </div>
-          <div className="space-y-5 leading-relaxed text-zinc-600 dark:text-zinc-400 md:col-span-7">
+          <div className="space-y-5 leading-relaxed text-zinc-600 dark:text-zinc-300 md:col-span-7">
             <p>
               We build on proven industrial hardware. That means collaborative
               and industrial robots from manufacturers like Universal Robots and
@@ -165,9 +239,9 @@ export default function AutomationPage() {
               Currently in development
             </p>
             <h2 className="mt-4 text-2xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-3xl">
-              A miniature autonomous arm
+              Vision Driven Autonomous Arm
             </h2>
-            <p className="mt-4 leading-relaxed text-zinc-600 dark:text-zinc-400">
+            <p className="mt-4 leading-relaxed text-zinc-600 dark:text-zinc-300">
               We're building a miniature autonomous arm to show our integration
               capabilities end to end. Mechanics, controls, vision, and software,
               all working as one system. It's a build in progress, and we expect

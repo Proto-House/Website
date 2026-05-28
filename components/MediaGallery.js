@@ -148,7 +148,7 @@ export default function MediaGallery({ items }) {
             )}
 
             {item.title && (
-              <figcaption className="px-3 py-2 text-xs text-zinc-500 dark:text-zinc-500">
+              <figcaption className="px-3 py-2 text-xs text-zinc-500 dark:text-zinc-400">
                 {item.title}
               </figcaption>
             )}
