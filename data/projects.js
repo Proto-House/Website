@@ -25,7 +25,8 @@ export const projects = [
     overview: [
       "The Mini Swerve Drive is a compact four-module swerve drivetrain. Every module steers and drives on its own, mounted on a 12.25-inch square chassis. The robot moves in any direction while rotating at the same time, the same omnidirectional control system you'll find on competition robots and industrial mobile platforms. Each module pairs a brushless drive motor with a brushless steering motor through an 8:1 reduction. A magnetic encoder closes the loop on wheel angle, giving us precise and repeatable positioning.",
       "What makes this build different: we engineered nearly every layer in-house. The mechanical assembly came together in CAD from scratch. The control electronics live on a custom PCB carrier board we designed around an ESP32-S3 master controller. Field-oriented motor control runs on dedicated FOC drivers that talk over a shared bus. The master pulls commands from a radio receiver, runs swerve kinematics in real time, and coordinates eight motors at once. Mechanical design, custom circuitry, PCB layout, embedded firmware, motor control algorithms; one working platform pulls all of it together.",
-      "The Mini Swerve Drive doubles as proof of engineering capability and as the foundation for our education work. It shows the same core skills industrial automation demands: precise motion control, robust electronics design, system integration, and the ability to take a complex mechatronic system from idea to working hardware. A formal physical build is on the way. We'll update this writeup once it's done.",
+      "The Mini Swerve Drive doubles as proof of engineering capability and as the foundation for our education work. It shows the same core skills industrial automation demands: precise motion control, robust electronics design, system integration, and the ability to take a complex mechatronic system from idea to working hardware.",
+      "A formal physical build is on the way. We'll update this writeup once it's done.",
     ],
     media: [
       { type: "image", src: "/images/Mini swerve/swerve module.png", alt: "Swerve module" },
@@ -48,9 +49,20 @@ export const projects = [
       "Embedded control",
       "System integration",
     ],
-    image: "/images/Misc Images/cool-arm.png",
-    links: [],
-    // Writeup intentionally omitted for now.
+    image: "/images/ai vision driven arm/title_arm.webp",
+    overview: [
+      "The Vision Driven Autonomous Arm is a robot that plays poker on its own. Point a camera at the table, deal it a hand, and it reads the cards, decides what to do, and physically acts on that decision. We designed and coded the entire system, hardware, vision, and decision logic, in a single three-day hackathon. It was our first taste of industry style automation, and it kicked off a year of research into vision driven robotics.",
+      "The arm sees the game through a 1080p USB webcam. We used OpenCV to capture and process the live video feed, isolating the cards in frame so the system always knows the current state of the game. From there a Google Gemini model acts as the brain. It takes the hand the arm is holding, reasons about the situation the way a human player would, and returns the best move: check or call, raise, or fold. This is the core of the project. Instead of hard coding poker strategy, we let an AI vision and reasoning pipeline make the call, then translated that call into motion.",
+      "Once Gemini picks a move, the arm runs a set of predetermined motions we modeled out for each action. Checking, folding, and raising each map to their own choreographed sequence on the SO-Arm100, a six degree of freedom robotic arm. An Arduino Uno (Elegoo R3) handles the physical interface: three momentary push buttons for Check/Call, Fold, and Raise, plus LED indicators that light up to show exactly what the arm is doing at any moment. Teaching an arm to reliably carry out these complex tasks, reading a scene, choosing an action, and executing the right physical sequence, is the same loop that drives real industrial automation.",
+      "For fun, we gave the robot a Poker Face. An Adafruit ST7735 1.8 inch 160x128 TFT LCD display shows the model's emotions and current actions in real time, so you can watch its mood shift as the game plays out. It turns a technical automation demo into something with personality, all designed and built in just three days.",
+    ],
+    media: [
+      { type: "gdrive", id: "1uMM5wDPa_9Yc_k9USvSGF28RGXfzODIa", title: "Arm demo" },
+      { type: "gdrive", id: "11CU6y63D-eNMz2KZr2oI50vqZW8Bcbhx", title: "Build vlog" },
+    ],
+    links: [
+      { label: "GitHub", href: "https://github.com/Eventide-03/The-Best-Hand" },
+    ],
   },
   {
     id: "frc-competition-robot",
@@ -65,7 +77,7 @@ export const projects = [
     ],
     image: "/images/FRC Robot/title_robot.png",
     overview:
-      "Our FRC season build — mechanical, electrical, and controls integrated under competition deadlines. The full-robot CAD, the routed parts layout, the brain pan (electronics tray), the intake, and the indexer all came together into a working robot. Below are CAD shots, in-progress photos, and bench tests.",
+      "Our FRC season build, mechanical, electrical, and controls integrated under competition deadlines. The full-robot CAD, the routed parts layout, the brain pan (electronics tray), the intake, and the indexer all came together into a working robot. Below are CAD shots, in-progress photos, and bench tests.",
     media: [
       { type: "image", src: "/images/FRC Robot/cool bot pic.JPG", alt: "Finished competition robot" },
       { type: "image", src: "/images/FRC Robot/full robot.webp", alt: "Full robot CAD" },
@@ -85,7 +97,7 @@ export const projects = [
     title: "Aries — AI Vocal Assistant",
     badge: "Congressional App Challenge Winner 2024",
     summary:
-      "A dictation-controlled computer assistant. Speak to Aries and it operates your machine end to end — browser, documents, mouse and keyboard, plus Gemini-powered answers — all hands-free.",
+      "A dictation-controlled computer assistant. Speak to Aries and it operates your machine end to end, browser, documents, mouse and keyboard, plus Gemini-powered answers, all hands-free.",
     skills: [
       "Software engineering",
       "AI / ML",

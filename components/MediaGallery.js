@@ -39,6 +39,27 @@ function youTubeSrc(id, autoplay = false) {
   return `https://www.youtube-nocookie.com/embed/${id}${autoplay ? "?autoplay=1" : ""}`;
 }
 
+// Google Drive "preview" embed — used for clips too large to commit to the repo.
+// `id` is the file ID from a share link (drive.google.com/file/d/<id>/view).
+function driveSrc(id) {
+  return `https://drive.google.com/file/d/${id}/preview`;
+}
+
+// Poster frame for a Drive file. Drive's /preview player letterboxes the clip
+// inside the iframe (lots of black, frame stuck in a corner) and we can't style
+// across the iframe boundary — so the grid shows this static thumbnail instead
+// and only loads the player iframe in the lightbox.
+function driveThumb(id) {
+  return `https://drive.google.com/thumbnail?id=${id}&sz=w1280`;
+}
+
+// Play-button overlay for video posters in the grid.
+const PlayIcon = (
+  <svg viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6" aria-hidden="true">
+    <path d="M8 5v14l11-7z" />
+  </svg>
+);
+
 // Callback ref that sets the <video>'s initial volume from `defaultVolume`
 // (range 0–1). Used to tame loud bench-test clips without changing the source.
 function videoVolumeRef(defaultVolume) {
@@ -132,11 +153,31 @@ export default function MediaGallery({ items }) {
                 allowFullScreen
                 className="block aspect-video w-full"
               />
+            ) : item.type === "gdrive" ? (
+              <button
+                type="button"
+                onClick={() => setOpenIdx(idx)}
+                aria-label={item.title || "Play video"}
+                className="relative block w-full p-0"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={driveThumb(item.id)}
+                  alt={item.title || ""}
+                  loading="lazy"
+                  className="block aspect-video w-full bg-black object-cover"
+                />
+                <span className="pointer-events-none absolute inset-0 flex items-center justify-center">
+                  <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-zinc-900/60 pl-0.5 text-white">
+                    {PlayIcon}
+                  </span>
+                </span>
+              </button>
             ) : null}
 
-            {/* Expand button — always rendered for videos/iframes (image is already
-                fully clickable). Stays subtle until hover. */}
-            {item.type !== "image" && (
+            {/* Expand button — rendered for inline videos/iframes (image and the
+                gdrive poster are already fully clickable). Stays subtle until hover. */}
+            {(item.type === "video" || item.type === "youtube") && (
               <button
                 type="button"
                 aria-label="View larger"
@@ -196,6 +237,15 @@ export default function MediaGallery({ items }) {
                   src={youTubeSrc(active.id, true)}
                   title={active.title || "YouTube video"}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  onClick={(e) => e.stopPropagation()}
+                  className="aspect-video w-full max-h-[90vh] rounded-lg"
+                />
+              ) : active.type === "gdrive" ? (
+                <iframe
+                  src={driveSrc(active.id)}
+                  title={active.title || "Video"}
+                  allow="autoplay"
                   allowFullScreen
                   onClick={(e) => e.stopPropagation()}
                   className="aspect-video w-full max-h-[90vh] rounded-lg"

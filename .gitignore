@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# large arm clips — hosted on Google Drive instead (embedded via gdrive media type)
+/public/images/ai vision driven arm/Arm Demo.mp4
+/public/images/ai vision driven arm/arm vlog.mp4
