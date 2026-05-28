@@ -20,7 +20,7 @@ export const metadata = {
 
 // Runs before paint to set the theme class, avoiding a flash and any
 // hydration mismatch between the server markup and the client.
-const themeScript = `(function(){try{var t=localStorage.getItem('theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;var c=document.documentElement.classList;d?c.add('dark'):c.remove('dark');}catch(e){}})();`;
+const themeScript = `(function(){try{var d=localStorage.getItem('theme')==='dark';var c=document.documentElement.classList;d?c.add('dark'):c.remove('dark');}catch(e){}})();`;
 
 export default function RootLayout({ children }) {
   return (

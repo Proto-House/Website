@@ -15,7 +15,7 @@ export default function ProjectsPage() {
       <Hero
         eyebrow="Portfolio"
         title="What we've built."
-        subtitle="These are our past projects in mechanical, electrical, and software, all built on real hardware. This showcases our expertise, and the same depth we bring to factory automation."
+        subtitle="These are our past projects in mechanical, electrical, and software, all built on real hardware. This showcases our expertise, and the depth we are able to bring to factory automation."
       />
 
       <Section className="border-t border-zinc-200 dark:border-zinc-800">
