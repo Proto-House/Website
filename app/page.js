@@ -135,8 +135,8 @@ export default function Home() {
 
       {/* About teaser + Education teaser */}
       <Section className="border-t border-zinc-200 dark:border-zinc-800">
-        <div className="grid gap-6 md:grid-cols-2">
-          <div className="rounded-xl border border-zinc-200 p-8 dark:border-zinc-800">
+        <div className="grid gap-6 md:grid-cols-1">
+          <div className="mx-auto w-full max-w-3xl rounded-xl border border-zinc-200 p-8 dark:border-zinc-800">
             <h2 className="text-2xl font-bold tracking-tight text-zinc-950 dark:text-white">
               Built by people who build robots
             </h2>
@@ -156,6 +156,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
+          {/* Education teaser — temporarily hidden. Uncomment to restore.
           <div className="rounded-xl border border-zinc-200 p-8 dark:border-zinc-800">
             <p className="text-sm font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
               Where we started
@@ -178,6 +179,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
+          */}
         </div>
       </Section>
 
