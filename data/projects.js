@@ -40,7 +40,7 @@ export const projects = [
     id: "Vision Driven Autonomous Arm",
     title: "Vision Driven Autonomous Arm",
     summary:
-      "An industrial-style robot arm driven by an on-device AI vision model. The arm sees the part in frame, plans the motion, and executes the pick — closing the loop between perception and manipulation in one custom build.",
+      "Our very first industry style project that sparked a year of research into vision driven automation. This robot arm was completely coded in a three-day hackathon, driven by an AI vision model, along with many open source softwares such as OpenCV, the arm is able to detect parts in frame, then to plan and exectue the motions depending on the scenario.",
     skills: [
       "Computer vision",
       "Robotic manipulation",
@@ -141,9 +141,9 @@ export const sideProjects = [
   },
   {
     id: "ftc-mecanum",
-    title: "FTC Mecanum Drivetrain",
+    title: "Mecanum Drivetrain",
     summary:
-      "A four-wheel mecanum drivetrain with the drive software to match — holonomic, omnidirectional motion. The same kinematic model that underpins AGVs and material-handling robots in industrial automation.",
+      "A four-wheel mecanum drivetrain with the drive software to match holonomic, omnidirectional motion coded with precise autonomous commands. The same kinematic model that underpins AGVs and material-handling robots in industrial automation.",
     image: "/images/FTC Mecanum/Title_FTC CAD.webp",
     overview:
       "Mecanum wheels give you omnidirectional motion. The drivetrain can translate, strafe, and rotate while keeping its heading locked the whole time. That's how automated guided vehicles get around on a factory floor. We designed the four-wheel platform and wrote the controls software end to end: inverse kinematics for the four mecanum wheels, field-oriented teleop, and the driver interface. The build is small. The problem is the same one we solve at industrial scale.",
