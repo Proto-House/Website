@@ -56,7 +56,7 @@ export default function EducationPage() {
             </p>
             <p>
               Students deserve to learn the technologies they'll actually use. We
-              think we can do better.
+              know we can do better.
             </p>
           </div>
         </div>
@@ -95,7 +95,8 @@ export default function EducationPage() {
             What we offer
           </h2>
           <p className="mt-3 text-zinc-600 dark:text-zinc-400">
-            We're just getting started here. More is coming.
+            Robotics kits and curriculum, plus the ongoing partnership to keep
+            both current with where the industry actually is.
           </p>
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -117,6 +118,32 @@ export default function EducationPage() {
               </p>
             </article>
           ))}
+        </div>
+
+        {/* Continuous-updates callout — explains the ongoing-contract model. */}
+        <div className="mt-10 rounded-xl border border-blue-200 bg-blue-50 p-6 dark:border-blue-900/60 dark:bg-blue-950/30 md:p-8">
+          <p className="text-sm font-semibold uppercase tracking-wider text-blue-700 dark:text-blue-300">
+            Built into the contract
+          </p>
+          <h3 className="mt-2 text-xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-2xl">
+            Continuous curriculum updates, shipped to schools under contract
+          </h3>
+          <div className="mt-4 space-y-3 leading-relaxed text-zinc-700 dark:text-zinc-300">
+            <p>
+              Robotics moves quick. Five years ago, shops ran on hardware the
+              industry has already retired. The gap between what&apos;s running
+              on factory floors and what&apos;s sitting in school labs is wider
+              still. So a school contract with us isn&apos;t a one-time sale.
+              It&apos;s an ongoing relationship.
+            </p>
+            <p>
+              Standards shift; we keep up. As modern robotics and industry
+              practice evolve, we rewrite the curriculum to match, then ship
+              the updated kit: new components, new electronics, new lesson
+              materials. Every school under contract gets it the moment
+              it&apos;s ready. You stay current. We do the chasing.
+            </p>
+          </div>
         </div>
       </Section>
 

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
@@ -173,8 +174,15 @@ export default function AutomationPage() {
               it to be demo-ready in 4 to 6 weeks.
             </p>
           </div>
-          <div className="flex h-56 items-center justify-center rounded-xl border border-zinc-200 bg-zinc-100 text-sm font-medium text-zinc-400 dark:border-zinc-800 dark:bg-zinc-800/60 dark:text-zinc-500 md:h-72">
-            Add build-in-progress photo
+          {/* Same source as the AI Vision-Driven Robot Arm title image on /projects. */}
+          <div className="relative h-56 overflow-hidden rounded-xl border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-800/60 md:h-72">
+            <Image
+              src="/images/Misc Images/cool-arm.png"
+              alt="AI vision-driven robot arm"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
           </div>
         </div>
       </Section>

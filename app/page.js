@@ -3,6 +3,8 @@ import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
 import ServiceCard from "@/components/ServiceCard";
+import FeaturedSlideshow from "@/components/FeaturedSlideshow";
+import { projects } from "@/data/projects";
 
 // Inline icons keep the home page self-contained and dependency-free.
 const DesignIcon = (
@@ -49,7 +51,9 @@ export default function Home() {
     <>
       <Hero
         decorative
-        eyebrow="Industrial automation & robotics education"
+        image="/images/Misc Images/cool-arm.png"
+        imageAlt="Industrial robotic arm"
+        eyebrow="Industrial Automation & Robotics Education"
         title="Industrial automation, engineered from the ground up."
         subtitle="We design, build, and support custom robotic automation for small and mid-size manufacturers. It's the same hands-on engineering we learned in the robotics community, which we still give back to today."
         actions={
@@ -119,36 +123,14 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Featured project */}
+      {/* Featured projects — cycles through every flagship build every 4s. */}
       <Section className="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900">
-        <div className="grid items-center gap-8 rounded-2xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-950 md:grid-cols-2 md:p-10">
-          <div className="flex h-56 items-center justify-center rounded-xl border border-zinc-200 bg-zinc-100 text-sm font-medium text-zinc-400 dark:border-zinc-800 dark:bg-zinc-800/60 dark:text-zinc-500 md:h-72">
-            Add swerve drive photo
-          </div>
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
-              Featured project
-            </p>
-            <h2 className="mt-3 text-2xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-3xl">
-              Mini Swerve Drive
-            </h2>
-            <p className="mt-4 leading-relaxed text-zinc-600 dark:text-zinc-400">
-              A 12×12 in. custom swerve drive packed with a purpose-built PCB
-              carrier board, an ESP32-S3 master controller, FOC motor control,
-              and magnetic encoders. Mechanical, electrical, firmware, all of it.
-              That's the full-stack engineering we now bring to factory
-              automation.
-            </p>
-            <div className="mt-6">
-              <Link
-                href="/projects"
-                className="text-sm font-semibold text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300"
-              >
-                See the full portfolio →
-              </Link>
-            </div>
-          </div>
+        <div className="mb-10 max-w-2xl">
+          <h2 className="text-3xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-4xl">
+            Projects
+          </h2>
         </div>
+        <FeaturedSlideshow items={projects} />
       </Section>
 
       {/* About teaser + Education teaser */}
