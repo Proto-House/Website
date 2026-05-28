@@ -2,7 +2,6 @@ import Image from "next/image";
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
-import ServiceCard from "@/components/ServiceCard";
 import ProcessStep from "@/components/ProcessStep";
 
 export const metadata = {
@@ -11,53 +10,62 @@ export const metadata = {
     "Custom robotic automation for small and mid-size manufacturers, designed, installed, and supported to cut cost per part and lift throughput.",
 };
 
-const services = [
+// Applications grouped by the business outcome they deliver. Framed softly
+// ("applications we focus on") to avoid implying a track record we haven't
+// built yet.
+const capabilities = [
   {
-    title: "Custom automation design & engineering",
-    body: "We start with your parts and your process. From there we design the robotic cell, the custom tooling, and the controls to match. Mechanical, electrical, and software get engineered together, not bolted on after the fact.",
+    outcome: "Reduce repetitive labor",
+    items: [
+      {
+        name: "Pick-and-place",
+        body: "Moving parts off a conveyor, into a box, or between workstations. One of the highest-ROI automation tasks.",
+      },
+      {
+        name: "Palletizing & depalletizing",
+        body: "Stacking and unstacking cases or products onto pallets. Eliminates heavy repetitive lifting that's hard to staff.",
+      },
+      {
+        name: "Packaging & case packing",
+        body: "Placing finished products into trays, boxes, or cases in consistent patterns.",
+      },
+    ],
   },
   {
-    title: "Installation & commissioning",
-    body: "We build, install, and commission the system right on your floor. Robots, tooling, vision, software, all integrated. Then we run it against real production until it's reliable.",
+    outcome: "Run machines longer with fewer operators",
+    items: [
+      {
+        name: "Machine tending",
+        body: "Loading and unloading CNC machines, injection molding presses, and other equipment. Keeps a single machine running without an operator standing by.",
+      },
+      {
+        name: "Part removal & sorting",
+        body: "Pulling finished parts from molds or equipment and sorting by type, size, or destination.",
+      },
+      {
+        name: "Material handling & transfer",
+        body: "Moving materials and work-in-progress between stations and storage so production keeps flowing.",
+      },
+    ],
   },
   {
-    title: "Long-term maintenance & support",
-    body: "Support contracts keep your line dependable. You get preventive maintenance, a fast response when something needs attention, and the institutional knowledge of the team that actually built it.",
-  },
-  {
-    title: "Process upgrades as you evolve",
-    body: "Part mixes change. Volumes change. When your requirements shift, we upgrade the system to match, which extends its life and protects your investment instead of forcing you to start over.",
+    outcome: "Improve quality and consistency",
+    items: [
+      {
+        name: "Vision-guided inspection",
+        body: "Cameras check parts for defects, verify dimensions, or confirm assembly — flagging anything that doesn't meet spec.",
+      },
+      {
+        name: "Labeling & marking",
+        body: "Applying labels, stamps, or markings to products in consistent positions.",
+      },
+      {
+        name: "End-of-line integration",
+        body: "Combining the above into one cell — parts come off a machine, get inspected, packed, and palletized in a single flow.",
+      },
+    ],
   },
 ];
-
-// Pain (traditional integration) lined up against ProtoHouse's answer.
-// Rendered as a 2-col table below "The problem" so the contrast reads visually.
-const contrasts = [
-  {
-    pain: "Expensive engagements and slow delivery, scoped for enterprise budgets.",
-    answer: "Priced realistically for small and mid-size manufacturers, with a faster path to a working line.",
-  },
-  {
-    pain: "One-and-done installs — the integrator vanishes once the system is on the floor.",
-    answer: "Long-term support built in. Same team, on call when the line needs them.",
-  },
-  {
-    pain: "A system nobody on your team fully understands when it drifts out of spec.",
-    answer: "Engineered transparently by the people who designed and built every part of it.",
-  },
-];
-
-const XIcon = (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 h-5 w-5 shrink-0 text-zinc-400 dark:text-zinc-500" aria-hidden="true">
-    <path d="M18 6 6 18M6 6l12 12" />
-  </svg>
-);
-
-const CheckIcon = (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className="mt-0.5 h-5 w-5 shrink-0 text-blue-600 dark:text-blue-400" aria-hidden="true">
-    <path d="m5 12 5 5L20 7" />
-  </svg>
-);
 
 const steps = [
   {
@@ -119,70 +127,52 @@ export default function AutomationPage() {
             </p>
           </div>
         </div>
-
-        {/* Visual: traditional integrator vs ProtoHouse, row-by-row pain → answer */}
-        <div className="mt-12 overflow-hidden rounded-2xl border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-950">
-          <div className="grid grid-cols-2">
-            <div className="border-b border-r border-zinc-200 bg-zinc-50 px-5 py-4 dark:border-zinc-800 dark:bg-zinc-900/50 md:px-7">
-              <p className="text-[11px] font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
-                The usual path
-              </p>
-              <p className="mt-1 text-sm font-semibold text-zinc-900 dark:text-zinc-100 md:text-base">
-                Traditional integrators
-              </p>
-            </div>
-            <div className="border-b border-zinc-200 bg-blue-50/50 px-5 py-4 dark:border-zinc-800 dark:bg-blue-950/20 md:px-7">
-              <p className="text-[11px] font-semibold uppercase tracking-wider text-blue-700 dark:text-blue-300">
-                Our approach
-              </p>
-              <p className="mt-1 text-sm font-semibold text-zinc-900 dark:text-zinc-100 md:text-base">
-                ProtoHouse
-              </p>
-            </div>
-          </div>
-          {contrasts.map((row, i) => (
-            <div
-              key={i}
-              className={`grid grid-cols-2 ${
-                i < contrasts.length - 1
-                  ? "border-b border-zinc-200 dark:border-zinc-800"
-                  : ""
-              }`}
-            >
-              <div className="flex items-start gap-3 border-r border-zinc-200 px-5 py-5 dark:border-zinc-800 md:px-7 md:py-6">
-                {XIcon}
-                <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-                  {row.pain}
-                </p>
-              </div>
-              <div className="flex items-start gap-3 px-5 py-5 md:px-7 md:py-6">
-                {CheckIcon}
-                <p className="text-sm leading-relaxed text-zinc-700 dark:text-zinc-200">
-                  {row.answer}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
       </Section>
 
-      {/* Our services */}
+      {/* Applications we focus on */}
       <Section className="border-t border-zinc-200 dark:border-zinc-800">
         <div className="max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-4xl">
-            Our services
+            Applications we focus on
           </h2>
           <p className="mt-3 text-zinc-600 dark:text-zinc-300">
-            Everything it takes to move a manual process to a dependable
-            automated one, and keep it that way.
+            The manual tasks that respond best to automation in small and
+            mid-size manufacturing, grouped by the outcome they deliver.
           </p>
         </div>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2">
-          {services.map((service) => (
-            <ServiceCard key={service.title} title={service.title}>
-              {service.body}
-            </ServiceCard>
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {capabilities.map((group) => (
+            <article
+              key={group.outcome}
+              className="rounded-xl border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900"
+            >
+              <h3 className="text-lg font-semibold text-zinc-950 dark:text-white">
+                {group.outcome}
+              </h3>
+              <ul className="mt-5 space-y-5">
+                {group.items.map((item) => (
+                  <li key={item.name}>
+                    <p className="text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+                      {item.name}
+                    </p>
+                    <p className="mt-1 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
+                      {item.body}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </article>
           ))}
+        </div>
+        <div className="mt-10 rounded-xl border border-zinc-200 bg-zinc-50 p-6 dark:border-zinc-800 dark:bg-zinc-900 md:p-8">
+          <p className="leading-relaxed text-zinc-700 dark:text-zinc-200">
+            <span className="font-semibold text-zinc-950 dark:text-white">
+              Not sure where to start?
+            </span>{" "}
+            Most facilities have one or two manual tasks that deliver the
+            fastest return on automation. We'll help you identify them in a
+            free on-site assessment.
+          </p>
         </div>
       </Section>
 
