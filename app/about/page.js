@@ -46,7 +46,7 @@ export default function AboutPage() {
           </div>
           <div className="space-y-5 leading-relaxed text-zinc-600 dark:text-zinc-300 md:col-span-7">
             <p>
-              ProtoHouse started where a lot of good engineers start. In FRC and
+              ProtoHouse started where a lot of good engineers start. In the FIRST Robotics Competition and
               small-scale robotics, mentoring and building next to other people
               who loved making things move.
             </p>
@@ -79,41 +79,61 @@ export default function AboutPage() {
           </p>
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-2">
-          {/* Founder 1 (Technical Lead) */}
+          {/* Founder 1 */}
           <article className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-800">
             <p className="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
-              Technical Lead
+              Technical Cofounder
             </p>
             <h3 className="mt-2 text-xl font-semibold text-zinc-950 dark:text-white">
-              [Name: to be filled in]
+              <a
+                href="https://www.linkedin.com/in/rishi-mishra-6262a6375/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-600 hover:underline dark:hover:text-blue-400"
+              >
+                Rishi Mishra
+              </a>
             </h3>
             <p className="mt-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">
               Engineering, robotics design, technical execution
             </p>
             <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-              [Bio placeholder. Technical background: mechanical and electrical
-              design, PCB layout and embedded firmware, motor control, and the
-              hands-on builds (swerve drive, drones, custom boards) behind our
-              automation work. To be filled in.]
+              Rishi is the engineering force behind ProtoHouse. He works across
+              the full stack of a machine, from mechanical design and PCB layout
+              to embedded firmware and motor control, and has the hands-on builds
+              to prove it: a custom swerve drive engineered down to its carrier
+              board, drones with bespoke electronics, and the firmware that ties
+              it all together. He designs from first principles, which is exactly
+              why our automation holds up on a real factory floor.
             </p>
           </article>
 
           {/* Founder 2 (Business Lead) */}
           <article className="rounded-xl border border-zinc-200 p-6 dark:border-zinc-800">
             <p className="text-xs font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
-              Business Lead
+              Sales Cofounder
             </p>
             <h3 className="mt-2 text-xl font-semibold text-zinc-950 dark:text-white">
-              [Name: to be filled in]
+              <a
+                href="https://www.linkedin.com/in/yash-patel-b7034636b/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-600 hover:underline dark:hover:text-blue-400"
+              >
+                Yash Patel
+              </a>
             </h3>
             <p className="mt-1 text-sm font-medium text-zinc-700 dark:text-zinc-300">
               Business development, customer relationships, operations
             </p>
             <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
-              [Bio placeholder. Background in business development, sales, and
-              customer-facing work: understanding what manufacturers need,
-              scoping engagements, and running operations so projects actually
-              deliver. To be filled in.]
+              Yash makes sure great engineering reaches the people who need it.
+              He owns the business side of ProtoHouse, from first conversation to
+              delivered project: understanding what a manufacturer actually
+              needs, scoping engagements honestly, and keeping operations running
+              so the work gets done and the ROI is real. He's the reason our
+              customers feel heard, and the reason projects don't just get built,
+              they get delivered.
             </p>
           </article>
         </div>

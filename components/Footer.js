@@ -108,11 +108,10 @@ export default function Footer() {
         {/* Quote */}
         <div className="flex flex-col justify-center md:items-end md:text-right">
           <p className="max-w-xs text-lg font-medium italic leading-relaxed text-zinc-900 dark:text-white">
-            &ldquo;Automation applied to an efficient operation will magnify the
-            efficiency.&rdquo;
+            &ldquo;Efficiency is the first step to magnitude.&rdquo;
           </p>
           <span className="mt-2 text-sm text-zinc-500 dark:text-zinc-300">
-            — Bill Gates
+            — Rishi Mishra
           </span>
         </div>
       </div>
