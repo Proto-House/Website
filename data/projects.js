@@ -6,8 +6,8 @@
 
 export const projects = [
   {
-    id: "mini-swerve-drive",
-    title: "Mini Swerve Drive",
+    id: "swerve-drivetrain",
+    title: "Swerve Drivetrain",
     badge: "Flagship",
     summary:
       "A 12×12 in. custom swerve drive built around a purpose-designed PCB carrier board and field-oriented motor control. Compact, but it proves the point. We can pull mechanical, electrical, and firmware into one working stack.",
