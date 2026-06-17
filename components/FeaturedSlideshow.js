@@ -42,7 +42,7 @@ export default function FeaturedSlideshow({ items, intervalMs = 4000 }) {
         ))}
       </div>
       <div>
-        <p className="text-sm font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+        <p className="font-mono text-sm font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
           Featured project
         </p>
         {/* Stack every slide's title + summary in the same grid cell so we can

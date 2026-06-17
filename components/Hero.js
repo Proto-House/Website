@@ -33,7 +33,7 @@ export default function Hero({
       >
         <div className={image ? "max-w-2xl" : "max-w-3xl"}>
           {eyebrow && (
-            <p className="inline-flex rounded-full border border-blue-200 bg-blue-50 px-4 py-1 text-sm font-medium text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-300">
+            <p className="font-mono inline-flex rounded-full border border-blue-200 bg-blue-50 px-4 py-1 text-sm font-medium text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-300">
               {eyebrow}
             </p>
           )}

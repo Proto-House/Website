@@ -56,7 +56,7 @@ export default function ProjectCard({ project, compact = false }) {
             {title}
           </h3>
           {badge && (
-            <span className="shrink-0 rounded-full bg-blue-50 px-2.5 py-1 text-xs font-semibold text-blue-700 dark:bg-blue-950/50 dark:text-blue-300">
+            <span className="font-mono shrink-0 rounded-full bg-blue-50 px-2.5 py-1 text-xs font-semibold text-blue-700 dark:bg-blue-950/50 dark:text-blue-300">
               {badge}
             </span>
           )}
@@ -71,7 +71,7 @@ export default function ProjectCard({ project, compact = false }) {
             {skills.map((skill) => (
               <span
                 key={skill}
-                className="rounded-full border border-zinc-200 bg-zinc-50 px-2.5 py-1 text-xs font-medium text-zinc-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
+                className="font-mono rounded-full border border-zinc-200 bg-zinc-50 px-2.5 py-1 text-xs font-medium text-zinc-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
               >
                 {skill}
               </span>
