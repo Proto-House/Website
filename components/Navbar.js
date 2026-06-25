@@ -8,8 +8,8 @@ import DarkModeToggle from "./DarkModeToggle";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/automation", label: "Automation" },
-  // Education tab — temporarily hidden. Uncomment to restore.
-  // { href: "/education", label: "Education" },
+  { href: "/education", label: "Education" },
+  { href: "/store", label: "Store" },
   { href: "/projects", label: "Projects" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },

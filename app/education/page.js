@@ -6,7 +6,7 @@ import { offerings, audiences } from "@/data/education";
 export const metadata = {
   title: "Education",
   description:
-    "Modern robotics education built on real engineering: kinematics, CAD, PCB design, embedded programming, and computer vision. Where ProtoHouse started.",
+    "How ProtoHouse teaches robotics: interactive, project-based courses that guide you through designing a real robot in Onshape with our material ecosystem, plus modern kits and curriculum for schools and teams.",
 };
 
 const approach = [
@@ -22,17 +22,72 @@ export default function EducationPage() {
     <>
       <Hero
         eyebrow="Robotics education"
-        title="Where we started. What we still believe in."
-        subtitle="We learned engineering by building robots. Now we're building the kind of education that teaches robotics the way it actually works today."
+        title="We teach robotics by building real robots."
+        subtitle="ProtoHouse education is hands-on and project-based. We guide you through designing your own robot in Onshape with our ecosystem of materials, wiring its electronics, and writing its code — the same way real engineering actually works."
         actions={
           <>
-            <Button href="/contact">Contact us about education</Button>
+            <Button href="/courses">Browse courses</Button>
             <Button href="#offerings" variant="secondary">
-              See what we offer
+              For schools & teams
             </Button>
           </>
         }
       />
+
+      {/* Interactive courses callout — points to the separate Courses hub */}
+      <Section className="border-t border-zinc-200 dark:border-zinc-800">
+        <div className="overflow-hidden rounded-2xl border border-blue-200 bg-blue-50 p-8 dark:border-blue-900/60 dark:bg-blue-950/30 md:p-12">
+          <div className="grid gap-8 md:grid-cols-12 md:items-center">
+            <div className="md:col-span-8">
+              <p className="text-sm font-semibold uppercase tracking-wider text-blue-700 dark:text-blue-300">
+                Interactive, project-based
+              </p>
+              <h2 className="mt-2 text-3xl font-bold tracking-tight text-zinc-950 dark:text-white md:text-4xl">
+                Start a build today
+              </h2>
+              <p className="mt-4 max-w-2xl leading-relaxed text-zinc-700 dark:text-zinc-300">
+                Our courses take you through a full robot — from CAD and design to
+                electronics and code — one day at a time over about a week. Follow
+                a guided build, or spin up a custom project for whatever
+                you&apos;re making and we&apos;ll generate a plan for exactly the
+                work it involves. Track your progress and keep a daily streak as
+                you go.
+              </p>
+              <div className="mt-6">
+                <Button href="/courses">Go to courses</Button>
+              </div>
+            </div>
+            <div className="md:col-span-4">
+              <ul className="space-y-3">
+                {[
+                  "Guided beginner & advanced builds",
+                  "Design in Onshape with our materials",
+                  "Create your own custom projects",
+                  "Progress tracking & daily streaks",
+                ].map((point) => (
+                  <li
+                    key={point}
+                    className="flex items-start gap-3 text-sm font-medium text-zinc-700 dark:text-zinc-200"
+                  >
+                    <CheckIcon />
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p className="mt-6 text-sm text-zinc-500 dark:text-zinc-400">
+          Need parts for a build? Everything our courses call for is in the{" "}
+          <a
+            href="/store"
+            className="font-medium text-blue-600 hover:text-blue-500 dark:text-blue-400"
+          >
+            ProtoHouse store
+          </a>
+          .
+        </p>
+      </Section>
 
       {/* The problem */}
       <Section className="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900">
@@ -191,5 +246,22 @@ export default function EducationPage() {
         </div>
       </Section>
     </>
+  );
+}
+
+function CheckIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className="mt-0.5 h-4 w-4 shrink-0 text-blue-600 dark:text-blue-400"
+    >
+      <path d="M20 6 9 17l-5-5" />
+    </svg>
   );
 }

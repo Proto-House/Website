@@ -32,6 +32,8 @@ const footerSections = [
     links: [
       { label: "Automation", href: "/automation" },
       { label: "Education", href: "/education" },
+      { label: "Courses", href: "/courses" },
+      { label: "Store", href: "/store" },
       { label: "Projects", href: "/projects" },
     ],
   },

@@ -135,8 +135,8 @@ export default function Home() {
 
       {/* About teaser + Education teaser */}
       <Section className="border-t border-zinc-200 dark:border-zinc-800">
-        <div className="grid gap-6 md:grid-cols-1">
-          <div className="mx-auto w-full max-w-3xl rounded-xl border border-zinc-200 p-8 dark:border-zinc-800">
+        <div className="grid gap-6 md:grid-cols-2">
+          <div className="rounded-xl border border-zinc-200 p-8 dark:border-zinc-800">
             <h2 className="text-2xl font-bold tracking-tight text-zinc-950 dark:text-white">
               Built by people who build robots
             </h2>
@@ -156,7 +156,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          {/* Education teaser — temporarily hidden. Uncomment to restore.
+          {/* Education teaser */}
           <div className="rounded-xl border border-zinc-200 p-8 dark:border-zinc-800">
             <p className="text-sm font-semibold uppercase tracking-wider text-blue-600 dark:text-blue-400">
               Where we started
@@ -166,20 +166,25 @@ export default function Home() {
             </h2>
             <p className="mt-4 leading-relaxed text-zinc-600 dark:text-zinc-300">
               We learned engineering through FRC and a lot of hands-on building.
-              We haven't forgotten that. Alongside the automation work, we're
-              putting together modern robotics kits and curriculum for the next
-              generation of builders.
+              We haven't forgotten that. Our interactive courses guide you through
+              building a real robot — from CAD and design to code — and we make
+              modern kits and curriculum for schools and teams.
             </p>
-            <div className="mt-6">
+            <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
               <Link
-                href="/education"
+                href="/courses"
                 className="text-sm font-semibold text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300"
               >
-                Explore education →
+                Browse courses →
+              </Link>
+              <Link
+                href="/education"
+                className="text-sm font-semibold text-zinc-600 hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-white"
+              >
+                About our education →
               </Link>
             </div>
           </div>
-          */}
         </div>
       </Section>
 
