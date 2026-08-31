@@ -2,6 +2,7 @@ import "./globals.css";
 import { IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import SiteChrome from "@/components/SiteChrome";
 
 const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
@@ -41,9 +42,9 @@ export default function RootLayout({ children }) {
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="flex min-h-screen flex-col bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <SiteChrome navbar={<Navbar />} footer={<Footer />}>
+          {children}
+        </SiteChrome>
       </body>
     </html>
   );
